@@ -1,25 +1,21 @@
-# Gatsby Deck
+# 개발자 민현기
 
-Create presentations using Gatsby & React.
+소프트웨어 엔지니어
 
----
-
-> Inscrutable icons litter the face of the devices even though the research
-> community has long demonstrated that people cannot remember the meaning of
-> more than a small number of icons […] Who can remember what each icon
-> means? Not me.
-> <cite>Don Norman</cite>
+미디어 아티스트
 
 ---
 
-# 🤫
+> <cite>사용 기술</cite>
+> java, python, javascript, spring-boot, django, netty, jquery, vuejs, nginx,
+uwsgi, tomcat, mysql, postgresql, elasticsearch, gradle, maven, pip, npm,
+docker, git, travis-ci, tensorflow
+
 
 ---
 
-## Slides are written in Markdown!
+## 현재
 
-Here's the source of the first slide:
+백수
 
-    # Gatsby Deck
-
-    Create presentations using Gatsby & React.
+midiDICE - 테크니션
