@@ -34,5 +34,14 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "GatsbyJS",
+        short_name: "GatsbyJS",
+        start_url: "/",
+        icon: "src/images/icon.png", // This path is relative to the root of the site.
+      },
+    },
   ],
 };
