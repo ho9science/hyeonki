@@ -70,7 +70,19 @@ blockquote {
   text-align: left;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 420px) {
+  blockquote {
+    width: 82vw;
+  }
+  a{
+    word-break: break-all;
+  }
+  #slide ul{
+    margin-left: 0px;
+  }
+}
+
+@media (min-width: 420px) and (max-width: 900px) {
   blockquote {
     width: 90vw;
   }
