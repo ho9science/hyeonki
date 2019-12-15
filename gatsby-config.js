@@ -7,7 +7,12 @@ module.exports = {
   plugins: [
     `gatsby-plugin-layout`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        globPatterns: ['**/*.{js,jpg,html,css}'],
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
