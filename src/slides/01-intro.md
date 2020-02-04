@@ -18,6 +18,6 @@ docker, git, travis-ci, tensorflow
 
 ## 현재
 
-백수
+디케이테크인
 
 midiDICE - 테크니션
