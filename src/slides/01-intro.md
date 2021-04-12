@@ -9,9 +9,9 @@
 ---
 
 > <cite>사용 기술</cite>
-> java, python, javascript, spring-boot, django, netty, jquery, vuejs, nginx,
-uwsgi, tomcat, mysql, postgresql, elasticsearch, gradle, maven, pip, npm,
-docker, git, travis-ci, tensorflow
+> java, python, javascript, spring-boot, elasticsearch, rabbimt-mq, docker, k8s, git,
+dynamodb, lambda, tomcat, mysql, postgresql, django, gradle, maven, pip, npm,
+netty, nginx, uwsgi, jquery, vuejs, jenkins, travis-ci, tensorflow
 
 
 ---
