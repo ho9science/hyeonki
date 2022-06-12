@@ -9,15 +9,15 @@
 ---
 
 > <cite>사용 기술</cite>
-> java, python, javascript, spring-boot, elasticsearch, rabbimt-mq, docker, k8s, git,
-dynamodb, lambda, tomcat, mysql, postgresql, django, gradle, maven, pip, npm,
-netty, nginx, uwsgi, jquery, vuejs, jenkins, travis-ci, tensorflow
+> java, python, javascript, spring-boot, aws, elasticsearch, rabbimt-mq, docker, k8s, git, django, grafana, prometheus, jenkins,
+reactjs, dynamodb, lambda, tomcat, mariadb, mysql, postgresql, uwsgi, gradle, maven, pip, npm,
+netty, nginx, jquery, vuejs, travis-ci, tensorflow and software architecture
 
 
 ---
 
 ## 현재
 
-디케이테크인
+휴런
 
 midiDICE - 테크니션

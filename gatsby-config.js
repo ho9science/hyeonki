@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     name: `개발자`,
     title: `민현기`,
-    date: `April 11, 2021`,
+    date: `June 12, 2022`,
   },
   plugins: [
     `gatsby-plugin-layout`,
