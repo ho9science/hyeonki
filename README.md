@@ -11,6 +11,3 @@ This project was written for introducing developer hyeonki.
 
 - Hyeonki ([@ho9science](https://github.com/ho9science))
 
-## From
-
-- gatsby-starter-deck ([@gatsby-starter-deck\_](https://github.com/fabe/gatsby-starter-deck))
