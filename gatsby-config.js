@@ -1,6 +1,15 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://www.yourdomain.tld`,
+    title: "개발자 민현기",
   },
-  plugins: [],
+  plugins: [
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `contents`,
+        path: `${__dirname}/contents`,
+      }
+    },
+    "gatsby-plugin-mdx",
+  ],
 }
