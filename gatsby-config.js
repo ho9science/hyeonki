@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "개발자 민현기",
+    title: "개발자",
+    name: "민현기",
+    date: `June 15, 2022`,
   },
   plugins: [
     {
@@ -11,5 +13,6 @@ module.exports = {
       }
     },
     "gatsby-plugin-mdx",
+    "gatsby-plugin-react-helmet",
   ],
 }
