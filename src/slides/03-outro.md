@@ -1,5 +1,0 @@
-# contact
-
-> making the world run better by data
->
-> [email](mailto:noblesswith@gmail.com) & [LinkedIn](https://www.linkedin.com/in/hyeonki-min-0a7303180/)
