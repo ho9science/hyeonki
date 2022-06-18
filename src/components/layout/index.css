@@ -180,3 +180,8 @@
   header span {
     color: var(--text);
   }
+
+  .remove-btn {
+    margin-right: 0.5rem;
+  }
+  

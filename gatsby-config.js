@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: "개발자",
     name: "민현기",
-    date: `June 15, 2022`,
+    date: `June 18, 2022`,
   },
   plugins: [
     {

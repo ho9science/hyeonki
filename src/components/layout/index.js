@@ -2,7 +2,8 @@ import * as React from 'react'
 import { Link, navigate, useStaticQuery, graphql } from 'gatsby'
 import { Helmet } from "react-helmet";
 import { useSwipeable } from 'react-swipeable';
-import './index.css';
+import Transition from '../transition';
+import './index.css'; 
 
 const Header = ({ name, title, date }) => (
   <header>
@@ -13,10 +14,16 @@ const Header = ({ name, title, date }) => (
   </header>
 );
 
-const Layout = ({ children }) => {
+const Layout = ( {children} ) => {
   const NEXT = 39;
   const PREV = 37;
 
+  React.useEffect(() => {
+    document.addEventListener('keydown', controlKeyEvent);
+    return () => {
+      document.removeEventListener('keydown', controlKeyEvent);
+    }
+  });
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -56,7 +63,9 @@ const Layout = ({ children }) => {
     ...config,
   });
 
-  const controlKeyEvent = ({ keyCode }) => {
+  const controlKeyEvent = (e) => {
+
+    const keyCode = e.keyCode;
     const now = window.location.pathname.replace("/", "");
     const slidesLength = data.allMdx.edges.length;
     if (now) {
@@ -72,9 +81,6 @@ const Layout = ({ children }) => {
     }
   };
 
-  document.addEventListener('keydown', controlKeyEvent);
-
-
   return (
     <div>
     <Helmet
@@ -86,9 +92,13 @@ const Layout = ({ children }) => {
       date={data.site.siteMetadata.date}
     />
     <div {...handlers} style={{ touchAction: 'pan-y'}}>
-      <main>
-        {children}
-      </main>
+      <Transition>
+        <div id="slide" style={{'width': '100%'}}>
+          <div style={{'width': '100%'}}>
+          {children}
+          </div>
+        </div>
+      </Transition>
     </div>
   </div>
   )
