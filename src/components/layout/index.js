@@ -64,9 +64,8 @@ const Layout = ( {children} ) => {
   });
 
   const controlKeyEvent = (e) => {
-
+    let now = 1;
     const keyCode = e.keyCode;
-    const now = window.location.pathname.replace("/", "");
     const slidesLength = data.allMdx.edges.length;
     if (now) {
       if (keyCode === PREV && +now === 1) {

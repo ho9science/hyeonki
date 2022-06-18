@@ -26,7 +26,6 @@ const Transition = ( {children} ) => {
     return(
     <TransitionGroup>
         <CSSTransition
-          key={window.location.pathname}
           timeout={duration}
         >
           {
