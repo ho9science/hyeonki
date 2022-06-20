@@ -14,10 +14,9 @@ const Header = ({ name, title, date }) => (
   </header>
 );
 
-const Layout = ( {children} ) => {
+const Layout = ( {metadata, children} ) => {
   const NEXT = 39;
   const PREV = 37;
-
   React.useEffect(() => {
     document.addEventListener('keydown', controlKeyEvent);
     return () => {
@@ -64,7 +63,7 @@ const Layout = ( {children} ) => {
   });
 
   const controlKeyEvent = (e) => {
-    let now = 1;
+    let now = metadata.mdx.frontmatter.title;
     const keyCode = e.keyCode;
     const slidesLength = data.allMdx.edges.length;
     if (now) {
