@@ -1,13 +1,16 @@
 import * as React from 'react'
+import { navigate } from 'gatsby'
 import Layout from '../components/layout'
 
-// Step 2: Define your component
+
 const IndexPage = () => {
+  navigate(`/1`);
   return (
-    <Layout pageTitle="Home Page">
-      <p>I'm making this by following the Gatsby Tutorial.</p>
+    <Layout>
+      <p>I'm Hyeonki Min</p>
+      <p>개발자 민현기</p>
     </Layout>
   )
 }
-// Step 3: Export your component
+
 export default IndexPage

@@ -4,7 +4,7 @@
 
 ## Info
 
-This project was written for introducing developer hyeonki.
+This project is to introduce developer hyeonki.
 
 
 ## Authors
