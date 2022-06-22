@@ -14,5 +14,11 @@ module.exports = {
     },
     "gatsby-plugin-mdx",
     "gatsby-plugin-react-helmet",
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        icon: `src/images/favicon.ico`,
+      },
+    },
   ],
 }

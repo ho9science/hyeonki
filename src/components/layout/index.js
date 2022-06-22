@@ -82,8 +82,9 @@ const Layout = ( {metadata, children} ) => {
   return (
     <div>
     <Helmet
-      title={`${data.site.siteMetadata.title} — ${data.site.siteMetadata.name}`}
-    />
+      title={`${data.site.siteMetadata.title} — ${data.site.siteMetadata.name}`}>
+      <link rel="henry-ico" href="/src/images/favicon.ico"/>  
+    </Helmet>
     <Header
       name={data.site.siteMetadata.name}
       title={data.site.siteMetadata.title}
