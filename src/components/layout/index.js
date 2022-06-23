@@ -1,18 +1,9 @@
 import * as React from 'react'
-import { Link, navigate, useStaticQuery, graphql } from 'gatsby'
-import { Helmet } from "react-helmet";
+import { navigate, useStaticQuery, graphql } from 'gatsby'
 import { useSwipeable } from 'react-swipeable';
 import Transition from '../transition';
-import './index.css'; 
+import Header from '../header';
 
-const Header = ({ name, title, date }) => (
-  <header>
-    <Link to="/1">
-      <span>{name}</span> — {title}
-    </Link>
-    <time>{date}</time>
-  </header>
-);
 
 const Layout = ( {metadata, children} ) => {
   const NEXT = 39;
@@ -25,13 +16,6 @@ const Layout = ( {metadata, children} ) => {
   });
   const data = useStaticQuery(graphql`
     query {
-      site {
-        siteMetadata {
-          title
-          name
-          date
-        }
-      }
       allMdx {
         edges {
           node {
@@ -80,26 +64,18 @@ const Layout = ( {metadata, children} ) => {
   };
 
   return (
-    <div>
-    <Helmet
-      title={`${data.site.siteMetadata.title} — ${data.site.siteMetadata.name}`}>
-      <link rel="henry-ico" href="/src/images/favicon.ico"/>  
-    </Helmet>
-    <Header
-      name={data.site.siteMetadata.name}
-      title={data.site.siteMetadata.title}
-      date={data.site.siteMetadata.date}
-    />
-    <div {...handlers} style={{ touchAction: 'pan-y'}}>
-      <Transition>
-        <div id="slide" style={{'width': '100%'}}>
-          <div style={{'width': '100%'}}>
-          {children}
+    <>
+      <Header/>
+      <div {...handlers} style={{ touchAction: 'pan-y'}}>
+        <Transition>
+          <div id="slide" style={{'width': '100%'}}>
+            <div style={{'width': '100%'}}>
+            {children}
+            </div>
           </div>
-        </div>
-      </Transition>
-    </div>
-  </div>
+        </Transition>
+      </div>
+    </>
   )
 }
 

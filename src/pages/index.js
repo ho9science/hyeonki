@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { navigate } from 'gatsby'
 import Layout from '../components/layout'
+import "../styles/index.css"
 
 
 const IndexPage = () => {

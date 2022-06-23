@@ -24,7 +24,7 @@ const transitionStyles = {
   
 const Transition = ( {children} ) => {
     return(
-    <TransitionGroup>
+      <TransitionGroup>
         <CSSTransition
           timeout={duration}
         >
